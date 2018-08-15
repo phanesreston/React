@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="intro"></div>
+        
+        <script type="text/babel">
+            class One extends React.Component {
+              render() {
+                return (
+                    <div>
+                        <h1>Component 1</h1>
+                        <p>First Component</p>
+                    </div>);
+              }
+            }
+
+            class Two extends React.Component {
+              render() {
+                return (
+                    <div>
+                        <h1>Component 2</h1>
+                        <p>Second Component</p>
+                    </div>);
+              }
+            }
+
+            class Three extends React.Component {
+              render() {
+                return (
+                    <div>
+                        <h1>Component 3</h1>
+                        <p>Third Component</p>
+                    </div>);
+              }
+            }
+
+            ReactDOM.render(
+                <div>
+                    <One />
+                    <Two />
+                    <Three />
+                </div>, document.getElementById('intro'));
+        </script>
+    </body>
+</html>
