@@ -9,12 +9,17 @@
         <div id="intro"></div>
         
         <script type="text/babel">
-            class Welcome extends React.Component {
+            class Movie extends React.Component {
               render() {
-                return <h1>Hello, Welcome To ReactJS Components</h1>;
+                return (
+                    <div>
+                        <h1>{this.props.title}</h1>
+                        <h2>{this.props.genre}</h2>
+                    </div>);
               }
             }
-            ReactDOM.render(<Welcome />, document.getElementById('intro'));
+
+            ReactDOM.render(<Movie title="Avatar" genre="Sci-Fi" />, document.getElementById('intro'));
         </script>
     </body>
 </html>
