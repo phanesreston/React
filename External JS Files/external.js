@@ -3,7 +3,7 @@ class Hello extends React.Component {
     return (
         <div>
             <h1>Hello World!</h1>
-            <p>i'm from an external javascript file</p>
+            <p>im from an external javascript file</p>
         </div>);
   }
 }
